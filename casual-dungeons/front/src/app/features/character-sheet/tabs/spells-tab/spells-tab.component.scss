@@ -1,0 +1,118 @@
+.spells-tab__espacios-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-3);
+  font-size: 1.5rem;
+
+  h4 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+  }
+}
+
+.spells-tab__espacios-botones {
+  display: flex;
+  gap: var(--sp-2);
+
+}
+
+.spells-tab__espacios-ayuda {
+  font-size: var(--fs-xs);
+  color: var(--text-secondary);
+  margin: 0 0 var(--sp-2);
+}
+
+.spells-tab__espacios {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-4);
+}
+
+.spells-tab__espacio-fila {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+}
+
+.spells-tab__espacio-nivel {
+  min-width: 90px;
+  font-family: var(--font-display);
+  font-size: var(--fs-md);
+  color: var(--text-secondary);
+}
+
+.spells-tab__espacio-pips {
+  display: flex;
+  gap: var(--sp-2);
+  flex-wrap: wrap;
+}
+
+// Checkbox circular: vacío = gastado, relleno (--disponible) = disponible sin usar.
+.spells-tab__pip {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: var(--border-width) solid var(--border-strong);
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+
+  &--disponible {
+    background: var(--gold, #c9a227);
+  }
+
+  &:disabled {
+    cursor: default;
+  }
+}
+
+.spells-tab__edicion-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-4);
+}
+
+.spells-tab__tabla {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+  margin-bottom: var(--sp-5);
+
+  th {
+    text-align: left;
+    font-family: var(--font-display);
+    font-size: var(--fs-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+    padding: var(--sp-2) var(--sp-3);
+    border-bottom: var(--border-width) solid var(--border-strong);
+  }
+
+  td {
+    padding: var(--sp-2) var(--sp-3);
+    border-bottom: var(--border-width) solid var(--border-subtle);
+  }
+}
+
+.spells-tab__añadir {
+  display: flex;
+  gap: var(--sp-2);
+  max-width: 500px;
+
+  .select {
+    flex: 1;
+  }
+}
+
+.spells-tab {
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto;
+  max-width: 800px;
+}

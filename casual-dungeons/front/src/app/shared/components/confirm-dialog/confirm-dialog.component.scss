@@ -1,0 +1,40 @@
+.dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--overlay-scrim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: var(--sp-4);
+}
+
+.dialog {
+  background: var(--bg-surface);
+  border: var(--border-width) solid var(--border-strong);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: var(--sp-5);
+  max-width: 420px;
+  width: 100%;
+}
+
+.dialog--peligroso {
+  border-color: var(--color-danger);
+}
+
+.dialog__titulo {
+  margin-bottom: var(--sp-2);
+  font-size: var(--fs-lg);
+}
+
+.dialog__mensaje {
+  color: var(--text-secondary);
+  margin-bottom: var(--sp-5);
+}
+
+.dialog__acciones {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--sp-3);
+}

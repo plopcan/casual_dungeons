@@ -1,0 +1,38 @@
+.monstruo-campania-form {
+  max-width: 640px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.monstruo-campania-form__seccion {
+  margin: var(--sp-4) 0 var(--sp-2);
+  font-family: var(--font-display);
+  font-size: var(--fs-sm);
+  color: var(--gold, #c9a227);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+
+  &:first-of-type {
+    margin-top: var(--sp-2);
+  }
+}
+
+.monstruo-campania-form__fila {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--sp-3);
+}
+
+.monstruo-campania-form__atributos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--sp-2);
+
+  @media (max-width: 560px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.monstruo-campania-form__textarea-grande {
+  min-height: 180px;
+}

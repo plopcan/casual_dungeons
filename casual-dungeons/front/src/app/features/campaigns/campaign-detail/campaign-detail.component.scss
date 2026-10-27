@@ -1,0 +1,91 @@
+// Las clases .tabs y .tabs__tab ya están definidas globalmente
+// en styles.scss y se reutilizan aquí sin redefinirlas.
+:host {
+  display: block;
+}
+
+.campaign-detail__titulo-selector {
+  font-size: var(--fs-md);
+  color: var(--text-secondary);
+  margin-bottom: var(--sp-4);
+}
+
+.campaign-detail__cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-4);
+}
+
+.campaign-detail__titulo-seccion {
+  font-size: var(--fs-md);
+  color: var(--text-secondary);
+}
+
+// Mismo patrón visual que .players-tab__grid/.players-tab__card
+// (pestaña "Jugadores" del DM), duplicado aquí porque cada
+// componente standalone encapsula sus propios estilos.
+.campaign-detail__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--sp-4);
+}
+
+.campaign-detail__card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-surface);
+  border: var(--border-width) solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: border-color var(--transition-fast);
+
+  &:hover {
+    border-color: var(--gold);
+  }
+}
+
+// El personaje sigue siendo suyo y se puede reactivar: se atenúa en
+// vez de ocultarse, para que quede claro que no ha desaparecido.
+.campaign-detail__card--inactivo {
+  opacity: 0.6;
+}
+
+.campaign-detail__card-cuerpo {
+  text-align: left;
+  background: none;
+  border: none;
+  padding: var(--sp-4);
+  cursor: pointer;
+  color: var(--text-primary);
+  width: 100%;
+}
+
+.campaign-detail__card-pie {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-2);
+  padding: var(--sp-2) var(--sp-4) var(--sp-3);
+  border-top: var(--border-width) solid var(--border-subtle);
+}
+
+.campaign-detail__nombre {
+  font-size: var(--fs-md);
+  margin-bottom: var(--sp-1);
+}
+
+.campaign-detail__clase {
+  font-size: var(--fs-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--sp-3);
+}
+
+.campaign-detail__stats {
+  display: flex;
+  gap: var(--sp-3);
+  font-size: var(--fs-sm);
+  color: var(--text-primary);
+  flex-wrap: wrap;
+}

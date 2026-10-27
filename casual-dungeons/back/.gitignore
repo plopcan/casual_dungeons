@@ -1,0 +1,17 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+## Secretos (nunca commitear)
+appsettings.Production.json
+*.secrets.json
+
+## Logs
+*.log
+
+## Archivos subidos por usuarios (se conserva la estructura de carpetas)
+src/CasualDungeons.API/wwwroot/uploads/**/*
+!src/CasualDungeons.API/wwwroot/uploads/**/.gitkeep

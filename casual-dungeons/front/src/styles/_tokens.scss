@@ -1,0 +1,104 @@
+// ============================================================
+// TOKENS DE DISEÑO — "Casual Dungeons"
+// Sistema de diseño con tema de manuscrito iluminado medieval.
+// El modo oscuro es el predeterminado de la aplicación; el modo
+// claro invierte a una paleta de pergamino real.
+// ============================================================
+
+:root {
+  // ---- Tipografía ----
+  --font-display: 'Cinzel', 'Georgia', serif;       // Títulos, nombres de personaje/campaña
+  --font-body: 'Crimson Text', 'Georgia', serif;     // Texto de lectura, descripciones, notas
+  --font-mono: 'JetBrains Mono', 'Consolas', monospace; // Números de ficha: HP, CA, atributos
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.375rem;
+  --fs-xl: 1.75rem;
+  --fs-2xl: 2.25rem;
+  --fs-3xl: 3rem;
+
+  // ---- Espaciado (escala de 4px) ----
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4rem;
+
+  // ---- Radios y bordes ----
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+  --border-width: 1px;
+
+  // ---- Sombras ----
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.5);
+  --shadow-gold-glow: 0 0 0 1px rgba(201, 162, 39, 0.35), 0 4px 16px rgba(201, 162, 39, 0.12);
+
+  // ---- Transiciones ----
+  --transition-fast: 120ms ease;
+  --transition-base: 200ms ease;
+
+  // ---- Capas semánticas (no relacionadas con tema) ----
+  --color-danger: #8b2e2e;
+  --color-danger-bright: #b04444;
+  --color-success: #3d5a3d;
+  --color-success-bright: #4f7a4f;
+  --color-info: #2e5a6e;
+}
+
+// ============================================================
+// MODO OSCURO (predeterminado) — cuero envejecido + iluminación dorada
+// ============================================================
+:root,
+:root[data-theme='dark'] {
+  --bg-deep: #1a1410;
+  --bg-surface: #241d17;
+  --bg-surface-raised: #2e251c;
+  --bg-surface-hover: #362b20;
+
+  --gold: #c9a227;
+  --gold-bright: #e8c547;
+  --gold-dim: #8a7224;
+
+  --text-primary: #e8dcc4;
+  --text-secondary: #b8a888;
+  --text-muted: #7d7060;
+  --text-on-gold: #1a1410;
+
+  --border-subtle: #3a2f24;
+  --border-strong: #574631;
+
+  --overlay-scrim: rgba(10, 7, 5, 0.72);
+}
+
+// ============================================================
+// MODO CLARO — pergamino real bajo luz de día
+// ============================================================
+:root[data-theme='light'] {
+  --bg-deep: #f4ecd8;
+  --bg-surface: #fbf6ea;
+  --bg-surface-raised: #ffffff;
+  --bg-surface-hover: #efe4c8;
+
+  --gold: #9c7a1a;
+  --gold-bright: #b8922a;
+  --gold-dim: #c9a227;
+
+  --text-primary: #2a2118;
+  --text-secondary: #4a3f30;
+  --text-muted: #7d7060;
+  --text-on-gold: #fbf6ea;
+
+  --border-subtle: #ddcfa8;
+  --border-strong: #c4b386;
+
+  --overlay-scrim: rgba(42, 33, 24, 0.45);
+}

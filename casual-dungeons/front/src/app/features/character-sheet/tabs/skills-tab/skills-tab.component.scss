@@ -1,0 +1,27 @@
+.skills-tab__tabla {
+  width: 100%;
+  max-width: 600px;
+  border-collapse: collapse;
+  margin: 40px auto;
+
+  th {
+    text-align: left;
+    font-family: var(--font-display);
+    font-size: var(--fs-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+    padding: var(--sp-2) var(--sp-3);
+    border-bottom: var(--border-width) solid var(--border-strong);
+  }
+
+  td {
+    padding: var(--sp-2) var(--sp-3);
+    border-bottom: var(--border-width) solid var(--border-subtle);
+  }
+}
+
+.skills-tab__atributo {
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+}

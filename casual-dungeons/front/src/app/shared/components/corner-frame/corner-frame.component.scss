@@ -1,0 +1,62 @@
+.corner-frame {
+  position: relative;
+  border: var(--border-width) solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  background: var(--bg-surface);
+  transition: border-color var(--transition-base);
+
+  &:hover {
+    border-color: var(--border-strong);
+  }
+}
+
+.corner {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  pointer-events: none;
+
+  path {
+    fill: none;
+    stroke: var(--gold);
+    stroke-width: 1.5;
+    opacity: 0.75;
+  }
+
+  circle {
+    fill: var(--gold);
+    opacity: 0.85;
+  }
+}
+
+.corner-frame--compact .corner {
+  width: 14px;
+  height: 14px;
+}
+
+.corner--tl {
+  top: -1px;
+  left: -1px;
+}
+
+.corner--tr {
+  top: -1px;
+  right: -1px;
+  transform: scaleX(1);
+}
+
+.corner--bl {
+  bottom: -1px;
+  left: -1px;
+  transform: scale(-1, 1);
+}
+
+.corner--br {
+  bottom: -1px;
+  right: -1px;
+  transform: scale(-1, 1);
+}
+
+.corner-frame__content {
+  position: relative;
+}

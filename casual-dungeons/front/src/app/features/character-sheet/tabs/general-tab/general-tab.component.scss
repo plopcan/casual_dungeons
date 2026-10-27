@@ -1,0 +1,20 @@
+.general-tab {
+  display: flex;
+  flex-direction: column;
+  max-width: 640px;
+  margin: 40px auto;
+  
+}
+
+.general-tab__fila {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--sp-3);
+}
+
+.general-tab__preview {
+  max-width: 200px;
+  border-radius: var(--radius-md);
+  border: var(--border-width) solid var(--border-subtle);
+  margin-top: var(--sp-2);
+}

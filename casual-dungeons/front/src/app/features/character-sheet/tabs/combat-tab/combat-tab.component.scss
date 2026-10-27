@@ -1,0 +1,32 @@
+.combat-tab__pv-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-3);
+  max-width: 500px;
+  margin-bottom: var(--sp-5);
+  padding: var(--sp-4);
+  background: var(--bg-surface);
+  border: var(--border-width) solid var(--color-danger);
+  border-radius: var(--radius-md);
+}
+
+.combat-tab__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--sp-3);
+  max-width: 640px;
+  margin-bottom: var(--sp-4);
+}
+
+.combat-tab__readonly {
+  display: flex;
+  align-items: center;
+  background: var(--bg-surface-hover);
+  color: var(--text-secondary);
+}
+.combat-tab{
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto;
+  max-width: 640px;
+}

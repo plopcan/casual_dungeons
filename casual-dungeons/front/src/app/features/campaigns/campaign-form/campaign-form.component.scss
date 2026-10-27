@@ -1,0 +1,57 @@
+.campaign-form {
+  max-width: 520px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.campaign-form__fila {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-3);
+}
+
+.campaign-form__jugadores {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  max-height: 160px;
+  overflow-y: auto;
+  padding: var(--sp-2);
+  background: var(--bg-surface-raised);
+  border: var(--border-width) solid var(--border-subtle);
+  border-radius: var(--radius-md);
+}
+
+.campaign-form__jugador {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: var(--fs-sm);
+  cursor: pointer;
+}
+
+.campaign-form__sin-jugadores {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+}
+
+.campaign-form__preview {
+  display: block;
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  border: var(--border-width) solid var(--border-subtle);
+  margin-bottom: var(--sp-2);
+}
+
+// El input de archivo real permanece oculto: se activa mediante el
+// botón "Elegir imagen"/"Cambiar imagen" vía inputArchivo.click().
+.campaign-form__input-archivo {
+  display: none;
+}
+
+.campaign-form__acciones-imagen {
+  display: flex;
+  gap: var(--sp-2);
+}

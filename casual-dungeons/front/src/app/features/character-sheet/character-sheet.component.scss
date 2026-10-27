@@ -1,0 +1,23 @@
+.character-sheet__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  margin-bottom: var(--sp-4);
+  flex-wrap: wrap;
+}
+
+.character-sheet__subtitulo {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.character-sheet__estado-guardado {
+  display: flex;
+  gap: var(--sp-2);
+  align-items: center;
+}
+
+.character-sheet__tabs {
+  flex-wrap: wrap;
+}

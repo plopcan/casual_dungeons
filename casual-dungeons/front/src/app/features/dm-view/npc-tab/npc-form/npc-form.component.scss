@@ -1,0 +1,21 @@
+.npc-form {
+  max-width: 560px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.npc-form__fila {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-3);
+}
+
+.npc-form__atributos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-3);
+
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

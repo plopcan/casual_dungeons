@@ -1,0 +1,45 @@
+# Ver https://help.github.com/articles/ignoring-files/ para más sobre ignorar archivos.
+
+# Compilados
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Dependencias de Node
+/node_modules
+
+# Cachés de herramientas
+.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# Variables de entorno / secretos locales (si en el futuro se separa
+# la config sensible de environment.ts, por ejemplo con un
+# environment.local.ts que no deba subirse al repo)
+.env
+.env.local
+
+# Sistemas operativos
+.DS_Store
+Thumbs.db
+
+# IDEs y editores
+.idea/
+.project
+.classpath
+*.launch
+.settings/
+*.sublime-workspace
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
